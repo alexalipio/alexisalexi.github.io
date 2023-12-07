@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alipio's Event</title>
+
+
+        <style>
+
+          h1,p{
+            color: white;
+          }
+          h1{font-family: cursive;}
+          p{font-family: cursive;}
+
+          body {
+              font-family: 'Times New Roman', Times, serif;
+              background-image:url("./gym.jpg");
+              background-position: center;
+              background-repeat: no-repeat;
+              background-size: cover;
+              margin: 0;
+              padding: 0;
+          }
+  
+          .container {
+              width: 50%;
+              margin: auto;
+              overflow: hidden;
+          }
+  
+          form {
+              background: rgba(206, 99, 255, 0.171);
+              padding: 30px;
+              margin-top: 10px;
+              margin-left: 10px;
+              margin-right: 10px;
+              border-radius: 30px;
+              box-shadow: 0px 0px 10px 0px #000000;
+          }
+  
+          label {
+              display: inline-block;
+              margin: 0px 0 5px 0;
+              color: #ffffff;
+              font-size: 20px;
+              font-family: monospace;
+          }
+  
+          input[type="text"],input[type="email"],input[type="number"],input[type="date"],
+          textarea {
+              width: 20%;
+              padding: 8px;
+              margin-bottom: 10px;
+              border: 1px solid #000000;
+              border-radius: 4px;
+              box-sizing: border-box;
+          }
+
+
+
+  
+          input[type="submit"] {
+              background-color: #f39bff;
+              color: rgb(0, 0, 0);
+              padding: 10px 15px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+          }
+          input[type="reset"] {
+              background-color: #f39bff;
+              color: rgb(0, 0, 0);
+              padding: 10px 15px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              float: right;
+              margin-right: 2px;
+          }
+
+          input[type="reset"]:hover {background-color: #71009e;}
+          input[type="submit"]:hover {background-color: #71009e;}
+
+          select{
+            width: 20%;
+            padding: 8px;
+          }
+
+      </style>
+
+     </head>   
+
+
+
+<body>
+
+<h1>School Registration Form</h1>
+
+<p>This is a School Registration Form</p>
+
+<form action="/action_page.php">
+  <label for="username">Participant's Full Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" ><br>
+
+  <label for="number">Contact Number:</label><br>
+  <input type="number" id="number" name="number"><br>
+
+  <label for="ws">Workshop:</label><br>
+  <select>
+    <option>Hobbies</option>
+    <option>Basketball</option>
+    <option>Volleyball</option>
+  </select><br><br>
+    
+  <label for="male">Gender:</label><br>
+
+  <label for="male">Male</label>
+  <input type="radio" id="male" name="male" value="male"><br>
+  
+  <label for="female">Female</label>
+  <input type="radio" id="female" name="female" value="female"><br><br>
+  
+
+  <label for="birthday">Birthday:</label><br>
+  <input type="date" id="birthday" name="birthday"><br>
+
+
+  <label for="birthday">Valid ID's:</label><br>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> WITH  STUDENT ID</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> WITH  GOVERNMENT ID</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> WITH COMPANY ID</label><br><br>
+
+ 
+    
+  <label for="username">Person to Contact Incase of Emergency:</label><br>
+  <input type="text" id="name" name="name"><br>
+
+  <label for="number">Emergency Contact Number:</label><br>
+  <input type="number" id="number" name="number"><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="4" required></textarea><br>
+
+  <input type="submit" value="Submit">
+  <input type="reset" value="Reset">
+
+
+
+  
+
+
+
+
+
+</form>
+
+</body>
+</html>
